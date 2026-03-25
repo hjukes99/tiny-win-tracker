@@ -1,4 +1,7 @@
 import express from 'express';
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const app = express();
 app.use(express.json());
